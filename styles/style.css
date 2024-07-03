@@ -4,27 +4,42 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-html {
+html body {
     width: 100vw;
     height: 100vh;
     background-color: purple;
 }
 
 main {
-    background-color: green;
-    border-radius: 20px;
-    margin: auto;
+    position: relative;
 }
 
 section {
-    width: 290px;
-    height: 250px;
-    text-align: center;
+    background-color: white;
+    width: 300px;
+    height: 500px;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 25%);
 }
 
-main > section.imag > img {
-    width: 290px;
+div#image {
+    background: white url(../metal.jpg) center center/cover no-repeat fixed;
+    width: 300px;
     height: 250px;
-    padding: 0px;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+div#form {
+    width: 300px;
+    height: 250px;
+    border-radius: 0px 0px 15px 15px;
+    text-align: center;
+    padding: 5px;
+}
+
+div#form > form > legend {
+    font-size: .87em;
 }
