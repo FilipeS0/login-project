@@ -1,6 +1,22 @@
 @media screen and (min-width: 768px) {
-    main {
-        
+    section {
+        width: 600px;
+        height: 300px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 70%);
+    }
+
+    section > div#image {
+        display: inline;
+        height: 300px;
+        width: 250px;
+    }
+
+    section > div#form {
+        display: inline;
+        height: 300px;
+        width: 230px;
     }
 
 }

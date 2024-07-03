@@ -17,29 +17,57 @@ main {
 section {
     background-color: white;
     width: 300px;
-    height: 500px;
+    height: 530px;
     border-radius: 15px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 25%);
+    transform: translate(-50%, 17%);
 }
 
-div#image {
-    background: white url(../metal.jpg) center center/cover no-repeat fixed;
+#image {
+    background: white url(../metal.jpg) left center/cover no-repeat fixed;
     width: 300px;
-    height: 250px;
+    height: 220px;
     border-radius: 15px 15px 0px 0px;
 }
 
-div#form {
+#form {
     width: 300px;
-    height: 250px;
+    height: 310px;
     border-radius: 0px 0px 15px 15px;
     text-align: center;
-    padding: 5px;
+}
+
+div#form > form > h1 {
+    padding: 10px 0px 5px;
 }
 
 div#form > form > legend {
     font-size: .87em;
+    padding: 0px 10px;
+}
+
+div#form > form > #buttom {
+    padding-top: 10px;
+}
+
+form > div#fill, div#buttom {
+    width: 260px;
+    background-color: purple;
+    margin: auto;
+    margin-top: 3px;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+div#fill > label {
+    margin-left: 1px;
+    margin-top: 1px;
+}
+
+div#fill > input {
+    width: 220px;
+    height: 30px;
+    border-radius: 12px;
 }
