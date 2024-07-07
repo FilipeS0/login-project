@@ -6,33 +6,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <title>Login</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/other.css">
 </head>
 <body>
-    <div class="container">
-        <main>
-            <section id="img">
+    <main>
+        <section>
+            <div class="img">
 
-            </section>
-
-            <section id="form">
+            </div>
+            
+            <div class="form">
                 <form action="aaa.php" method="post">
-                    <div>
+                
+                    <h1>Login</h1>
+                    <legend>Here you're welcome to change your settings and make your environment your face!</legend>
+                
+                    <div class="input">
                         <label for="email"><span class="material-symbols-outlined">person</span></label>
                         <input class="fill" type="email" name="email" id="email" required placeholder="Email" >
                     </div>
-                    <div>
+                    <div class="input">
                         <label for="pass"><span class="material-symbols-outlined">vpn_key</span></label>
-                        <input class="fill" type="password" name="pass" id="pass">
+                        <input placeholder="Password" class="fill" type="password" name="pass" id="pass">
                     </div>
-                    <div class="button">
-                        <input class="buttom" type="submit" value="Login">
-                    </div>
-                    <div>
-                        <input class="buttom" type="button" value="Forgot your password?">
-                    </div>
+                
+                    <input class="buttom" type="submit" value="Login">
+                
+                    <input class="buttom" type="button" value="Forgot your password?">
+                
                 </form>
-            </section>
-        </main>
-    </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

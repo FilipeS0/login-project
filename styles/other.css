@@ -1,0 +1,72 @@
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    main {
+        background-image: linear-gradient(to top, #87cefa, #913091);
+    }
+
+    section {
+        width: 75vw;
+        height: 400px;
+    }
+
+    section div.img {
+        float: left;
+
+        width: 40%;
+        height: 400px;
+    }
+
+    div.form {
+        float: right;
+
+        width: 60%;
+        height: 400px;
+        margin-top: 45px;
+    }
+
+    legend {
+        width: 270px;
+        margin: auto;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    main {
+        background-image: linear-gradient(to top, #87cefa, #913091);
+    }
+
+    section {
+        width: 75vw;
+        max-width: 900px;
+        height: 600px;
+    }
+
+    section div.img {
+        float: right;
+
+        width: 50%;
+        height: 600px;
+    }
+
+    div.form {
+        float: left;
+
+        width: 50%;
+        height: 600px;
+        margin-top: 100px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    legend {
+        width: 300px;
+        margin: auto;
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+
+}

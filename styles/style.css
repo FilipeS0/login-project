@@ -1,63 +1,113 @@
 * {
-    margin: 0px;
     padding: 0px;
-    border: 0px;
-}
-
-.container {
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(103, 10, 103);
-    position: relative;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 main {
-    background-color: aliceblue;
-    width: 300px;
-    height: 500px;
-    border-radius: 15px;
+    background-color: lightskyblue;
+
+    height: 100vh;
+    width: 100vw;
+
+    position: relative;
+}
+
+section {
+    background-color: white;
+    border: 2px solid rgba(0, 0, 255, 0.436);
+
     position: absolute;
+    height: 500px;
+    width: 300px;
+    border-radius: 15px;
+
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
 }
 
-section#img {
-    background: lightblue url(../metal.jpg) center bottom/cover no-repeat;
-    width: 300px;
-    height: 230px;
+section div.img {
+    background: gray url(../metal.jpg) left center/cover no-repeat;
 
+    height: 200px;
+    width: 100%;
 }
 
-section#form {
-    width: 300px;
-    height: 270px;
-}
-
-#form div {
-    background-color: purple;
-    color: white;
-    width: 250px;
-
-    padding: 1px;
-    margin: 10px auto;
-    border-radius: 20px;
-}
-
-
-
-section div input.fill {
-    padding: 10px;
-    width: 200px;
-    border-radius: 20px;
-    height: 20px;
-}
-
-section div input.buttom {
+.form h1 {
     text-align: center;
-    padding: 20px;
-    width: 250px;
-    border-radius: 20px;
-    height: 24px;
+    padding-top: 5px;
+}
+
+.form legend {
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+div.input {
+    background-color: #913091;
+    border: 1px solid rgba(0, 0, 255, 0.436);
+    
+    width: 85%;
+    height: 40px;
+
+    border-radius: 7px;
+    margin: 5px auto;
+}
+
+div.input > label span {
+    display: block;
+    float: left;
+    font-size: 2em;
+    color: white;
+
+    width: 5px;
+    margin: 3px;
+}
+
+div.input > input {
+    display: block;
+    float: right;
+    background-color: lightskyblue;
+
+    border-radius: 7px;
+    width: 85%;
+    height: 95%;
+    margin: 1px;
+}
+
+input::placeholder {
+    text-align: center;
+}
+
+input[type=submit] {
+    display: block;
+    
+    background-color: lightblue;
+
+    width: 85%;
+    height: 40px;
+    margin: 5px auto;
+    border-radius: 7px;
+
+    cursor: pointer;
+}
+
+input[type=button] {
+    display: block;
+    
+    background-color: lightskyblue;
+
+    width: 85%;
+    height: 40px;
+    margin: 6px auto;
+    border-radius: 7px;
+
+    cursor: pointer;
+}
+
+input[type=submit]:hover, input[type=button]:hover {
+    background-color: #913091;
 }
