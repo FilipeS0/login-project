@@ -1,5 +1,7 @@
 @media screen and (min-width: 768px) and (max-width: 992px) {
     main {
+        width: 100vw;
+        height: 100vh;
         background-image: linear-gradient(to top, #87cefa, #913091);
     }
 
